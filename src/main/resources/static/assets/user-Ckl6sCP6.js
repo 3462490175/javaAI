@@ -1,0 +1,1 @@
+import{r as e}from"./request-BGWSr-sT.js";function t(t){return e({url:`/user/login`,method:`post`,data:t})}function n(t){return e({url:`/user/register`,method:`post`,data:t})}export{n,t};
