@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能心理健康 AI 咨询系统 | 企业级全栈项目</title>
+    <style>
+        /* 基础样式重置 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+            color: #334155;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        a { text-decoration: none; color: inherit; }
+
+        /* 顶部导航 */
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo { font-size: 1.2rem; font-weight: bold; color: #0ea5e9; display: flex; align-items: center; gap: 8px;}
+        .github-btn {
+            background: #1e293b;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+        .github-btn:hover { background: #0f172a; }
+
+        /* 核心内容区 */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 3rem;
+            color: #0f172a;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+        .btn {
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: #0ea5e9;
+            color: white;
+            box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4);
+        }
+        .btn-primary:hover {
+            background: #0284c7;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: white;
+            color: #0f172a;
+            border: 1px solid #cbd5e1;
+        }
+        .btn-secondary:hover { background: #f8fafc; }
+
+        /* 卡片布局 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            text-align: left;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #f1f5f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+        }
+        .card-icon { font-size: 2rem; margin-bottom: 15px; }
+        .card-title { font-size: 1.25rem; font-weight: bold; color: #0f172a; margin-bottom: 10px; }
+        .card-desc { font-size: 0.95rem; color: #64748b; }
+
+        /* 技术栈标签 */
+        .tech-stack {
+            margin-top: 60px;
+            text-align: center;
+        }
+        .tech-stack h3 { margin-bottom: 20px; color: #334155; }
+        .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 80px;
+        }
+
+        @media (max-width: 600px) {
+            .hero-title { font-size: 2.2rem; }
+            .cta-group { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">✨ AI Hou</div>
+        <a href="https://github.com/3462490175/javaAI" class="github-btn" target="_blank">GitHub 仓库</a>
+    </header>
+
+    <div class="container">
+        <!-- 主视觉 -->
+        <h1 class="hero-title">智能心理健康 AI 咨询系统介绍页面</h1>
+        <p class="hero-subtitle">
+            基于 Spring Boot 3 + Spring AI + Vue 3 构建的企业级全栈项目。<br>
+            提供流式打字机对话、无状态 JWT 鉴权与长连接上下文记忆。
+        </p>
+        
+        <div class="cta-group">
+            <a href="https://github.com/3462490175/javaAI" class="btn btn-primary" target="_blank">查看源码</a>
+       
+        </div>
+
+        <!-- 核心亮点 -->
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <div class="card-title">AI 流式极速响应</div>
+                <div class="card-desc">集成 Spring AI 对接大模型，基于 SSE (Server-Sent Events) 技术实现打字机级别的流式输出，彻底告别传统 HTTP 长时间等待。</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔐</div>
+                <div class="card-title">企业级安全认证</div>
+                <div class="card-desc">基于 Spring Security + JWT 实现前后端分离架构下的无状态鉴权。自定义过滤器拦截解析 Token，保障接口安全。</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <div class="card-title">智能上下文记忆</div>
+                <div class="card-desc">使用 Redis 与 ChatMemory 缓存多轮对话上下文，确保 AI 能够记住历史聊天记录，提供连贯、共情的心理疏导体验。</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🛡️</div>
+                <div class="card-title">全局异常与校验</div>
+                <div class="card-desc">主导封装统一响应格式（Result）与全局异常处理（RestControllerAdvice），结合 Spring Validation 实现入参深度校验。</div>
+            </div>
+        </div>
+
+        <!-- 技术栈展示 -->
+        <div class="tech-stack">
+            <h3>🛠️ 全栈技术生态</h3>
+            <div class="tags">
+                <span class="tag">Java 17</span>
+                <span class="tag">Spring Boot 3</span>
+                <span class="tag">Spring AI</span>
+                <span class="tag">Spring Security</span>
+                <span class="tag">MyBatis-Plus</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Redis</span>
+                <span class="tag">JWT</span>
+                <span class="tag">Vue 3</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Pinia</span>
+                <span class="tag">Element Plus</span>
+                <span class="tag">SSE 流式通信</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 AI Hou Project. Built with ❤️ by 杨宇人.</p>
+        <p style="margin-top: 8px;">
+            <a href="https://github.com/3462490175/javaAI" style="color: #0ea5e9;">https://github.com/3462490175/javaAI</a>
+        </p>
+    </footer>
+
+</body>
+</html>
